@@ -1,0 +1,282 @@
+#outer-grid {
+			display: grid;
+			grid-template-rows: 24vw 1fr 8vw;
+
+		}
+
+		#top-row {
+			display: grid;
+			grid-template-columns: 24vw 1fr;
+		}
+
+		#second-row {
+			display: grid;
+			grid-template-columns: 61% 39%;
+		}
+
+		#third-row {
+			display: grid;
+			grid-template-columns: 39% 61%;
+		}
+
+		#bottom-row {
+			display: grid;
+			grid-template-rows: 100px;
+			background: #212121;
+		}
+
+		#top-row-right {
+			display: grid;
+			grid-template-rows: 8vw 8vw 8vw; 
+		}
+
+		#name {
+			/*used flex instead of grid because flex is more flexible....ahhh..u see what i did here*/
+			display: flex;
+			padding-left: 20px;
+			align-items: center;
+			text-align: left;
+			background: #212121;
+			/*vw is viewport width : automatically adjusts ths size of text with respect to the viewport*/
+			font-size: 3.5vw;
+			font-family: 'Nunito', sans-serif;
+			color: white;
+
+		}
+
+		#what-i-am {
+			display: flex;
+			padding-left: 20px;
+			align-items: center;
+			text-align: left;
+			background: #424242;
+			font-size: 3.5vw;
+			font-family: 'Nunito', sans-serif;
+		}
+
+		#nav-bar {
+			display: grid;
+			grid-template-columns: 16.5% 16.5% 16.5% 16.5% 16.5% 17.5%;
+			color: white;
+		}
+
+
+		#home-bar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #FF5722;
+			font-family: 'Nunito', sans-serif;
+			font-size: 1.1vw;
+			/*text-decoration is none to remove text being highlighted when mouse hovers over the button*/
+			text-decoration: none;
+			/*flex-direction is set to column so that text is displayed below the icons....
+			this was the only way i could make it work...<br> doesn't work*/
+			flex-direction: column;
+		}
+
+		#resume-bar {
+			display: flex;
+			/*horizontal alignment*/
+			align-items: center;
+			/*verical alignment*/
+			justify-content: center;
+			background: #FFCA28;
+			font-family: 'Nunito', sans-serif;
+			font-size: 1.1vw;
+			text-decoration: none;
+			flex-direction: column;
+		}
+
+		#portfolio-bar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #8BC34A;
+			font-family: 'Nunito', sans-serif;
+			font-size: 1.1vw;
+			text-decoration: none;
+			flex-direction: column;
+		}
+
+		#blog-bar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #009688;
+			font-family: 'Nunito', sans-serif;
+			font-size: 1.1vw;
+			text-decoration: none;
+			flex-direction: column;
+		}
+
+		#contact-bar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #29B6F6;
+			font-family: 'Nunito', sans-serif;
+			font-size: 1.1vw;
+			text-decoration: none;
+			flex-direction: column;
+		}
+
+		#donate-bar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #f44336;
+			font-family: 'Nunito', sans-serif;
+			font-size: 1.1vw;
+			text-decoration: none;
+			flex-direction: column;
+		}
+		#interests {
+			display: grid;
+			grid-template-rows: 80px 1fr;
+		}
+		
+		#what-makes-me-tick-heading{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #EEEEEE;
+			font-family: 'Nunito', sans-serif;
+			font-size: 2.3vw;
+			font-weight: bolder;
+		}
+
+		#what-makes-me-tick {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			height: 100%;
+		}
+
+		#text-left{
+			display: flex;
+			align-items: left;
+			padding-left: 70px;
+			justify-content: center;
+			background: #EEEEEE;
+			font-family: 'Nunito', sans-serif;
+			font-size: 2.3vw;
+			flex-direction: column;
+			font-weight: bolder;
+		}
+
+		#image-right{
+			display: flex;
+			justify-content: right;
+			padding-right: 60px;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			padding-left: 20px;
+			align-items: right;			
+			background: #EEEEEE;
+			font-family: 'Nunito', sans-serif;
+			font-size: 1.7vw;
+		}
+		
+		#personal-info {
+			display: grid;
+			grid-template-rows: 80px 1fr;
+
+		}
+
+		#personal-info-heading {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #E0E0E0;
+			font-family: 'Nunito', sans-serif;
+			font-size: 2.3vw;
+			font-weight: bolder;
+		}
+
+		#personal-info-details {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			height: 100%;
+		}
+
+		#personal-info-details-left {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #E0E0E0;
+			font-family: 'Nunito', sans-serif;
+			font-size: 1.7vw;
+			flex-direction: column;
+			font-weight: bolder;
+		}
+
+		#personal-info-details-right {
+			display: flex;
+			padding-right: 40px;
+			align-items: center;			
+			background: #E0E0E0;
+			font-family: 'Nunito', sans-serif;
+			font-size: 1.7vw;
+			text-align: left;
+
+		}
+
+		.i-am {
+			height:100%;
+			overflow:hidden;		  
+			text-align:left;
+
+		}
+		.i-am > * {
+			display:flex;
+		    height:100%;
+		    margin:0 auto;
+		    padding-left: 20px;
+		    background: #424242;
+			font-family: 'Nunito', sans-serif;
+			font-size: 2.5vw;
+		    transition:all .3s;		    
+		    align-items:center;
+		    text-align: left;
+		    color: white;
+		 
+		}
+		#employment-skills {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #9b59b6;
+			font-family: 'Nunito', sans-serif;
+			font-size: 1.7vw;
+			column-span: 100%;
+		}
+
+		#professional-skills {
+			display: flex;
+			align-items: stretch;
+			flex-grow: 1;
+			flex-direction: column;
+			background: #3498db;
+			font-family: 'Nunito', sans-serif;
+			font-size: 1.7vw;
+			min-height: 320px;
+		}
+
+		#footer-bottom-row-1 {
+			display: flex;
+
+		}
+
+		#footer-bottom-row-2 {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			font-family: 'Nunito', sans-serif;
+			font-size: 1.7vw;
+			color: white;
+		}
+
+
+		
+
+		
